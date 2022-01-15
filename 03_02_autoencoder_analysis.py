@@ -110,7 +110,7 @@ example_labels = y_test[example_idx]
 z_points = AE.encoder.predict(example_images)
 
 plt.figure(figsize=(figsize, figsize))
-plt.scatter(z_points[:, 0], z_points[:, 1], cmap='rainbow', c=example_labels, alpha=0.5, s=2)
+plt.scatter(z_points[:, 0], z_points[:, 1], cmap='rainbow', c=example_labels, alpha=0.5, s=2)  #type: ignore
 plt.colorbar()
 plt.show()
 
@@ -126,7 +126,7 @@ example_labels = y_test[example_idx]
 z_points = AE.encoder.predict(example_images)
 
 plt.figure(figsize=(5, 5))
-plt.scatter(z_points[:, 0] , z_points[:, 1] , cmap='rainbow' , c= example_labels
+plt.scatter(z_points[:, 0] , z_points[:, 1] , cmap='rainbow' , c= example_labels  # type:ignore
             , alpha=0.5, s=2)
 plt.colorbar()
 
